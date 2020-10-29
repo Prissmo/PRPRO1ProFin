@@ -1,12 +1,6 @@
 body{
     margin: 0px;
 }
-header{
-    background-image: url(".\Imagenes\HeaderBackground.jpg");
-    background-position: top left;
-    background-size: cover;
-    background-repeat: repeat-y;
-}
 .headertop{
     /*position: fixed;*/
     display: flex;
@@ -15,7 +9,7 @@ header{
     height: 3rem;
     margin: 0px 0px 0px 0px;
     top: 0px;
-    background-color: rgba(9, 201, 35, 0.397);
+    background-color: rgb(126, 214, 137);
     border-bottom-style: solid;
     border-bottom-width: thin;
 }
@@ -35,9 +29,12 @@ header{
     font-size: 2.1rem;
     margin-top: 0.5rem;
     margin-right: 0px;
+    color: black;
+    margin-bottom: 0.4rem;
 }
 .headercate{
     width: 200px;
+    margin-bottom: 0.4rem;
 }
 .headertopbtns{
     width: 600px;
@@ -48,5 +45,16 @@ header{
     text-decoration: none;
     color: black;
     margin-right: 1rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
 }
-
+.btnstop:hover{
+    color: white;
+}
+.spancate{
+    color: black;
+    font-size: 1.35rem;
+}
+li a{
+    text-decoration: none;
+}
