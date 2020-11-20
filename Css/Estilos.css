@@ -1,24 +1,48 @@
+html{
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
+    padding: 0px;
 }
+ul, ol{
+    list-style: none;
+}
+svg{
+   position: relative;
+   top: 3.8px;
+   margin: 0px;
+   padding: 0px;
+}
+.separador{
+    background-image: url("../Imagenes/separador.jpg");
+    background-repeat: repeat-y;
+    padding: 0 4px;
+    width: 2px;
+    height: 1.7rem;
+    top: 6px;
+    display: inline-block;
+    position: relative;
+}
+/* ---------------Header----------- */
 .headertop{
-    /*position: fixed;*/
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    height: 3rem;
+    height: 3.4rem;
     margin: 0px 0px 0px 0px;
     top: 0px;
-    background-color: rgb(126, 214, 137);
+    background-color: rgb(154, 226, 164);
     border-bottom-style: solid;
     border-bottom-width: thin;
+    box-shadow: 0px 10px 9px -6px rgba(0,0,0,0.75);
 }
 .headertoplogo{
-    width: 350px;
+    width: 390px;
     display: flex; 
 }
 #iniciotitulo{
-    margin-left: 4rem;
+    margin-left: 4.5rem;
 }
 .logoprincipal{
     height: 2rem;
@@ -30,31 +54,364 @@ body{
     margin-top: 0.5rem;
     margin-right: 0px;
     color: black;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.6rem;
 }
 .headercate{
-    width: 200px;
-    margin-bottom: 0.4rem;
-}
-.headertopbtns{
-    width: 600px;
-    display: flex;
-    align-content: flex-end;
-}
-.btnstop{
-    text-decoration: none;
-    color: black;
-    margin-right: 1rem;
-    margin-bottom: 0.4rem;
-    font-size: 1.1rem;
-}
-.btnstop:hover{
-    color: white;
+    width: 220px;
+    margin-bottom: 0.6rem;
+    height: 3rem;
+    margin: 0px;
+    font-family: 'Oswald';
 }
 .spancate{
     color: black;
     font-size: 1.35rem;
 }
-li a{
+.headercate ul{
+    padding: 0px;
+    width: 11rem;
+    max-height: 0;
+    transition: max-height 0.01s ease-out;
+    overflow: hidden;
+    position: relative;
+    top: -7px;
+    border-radius: 5px;
+}
+.headercate:hover> ul{
+    max-height: 16rem;
+    transition: max-height 0.80s ease-in;
+    box-shadow: -10px 10px 26px -7px rgba(0,0,0,0.74);
+}
+.headercate li a{
     text-decoration: none;
+    background-color: rgb(114, 235, 130);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    color: black;
+    line-height: 1.5rem;
+    padding: 5px;
+}
+.headertopbtns{
+    width: 700px;
+    display: flex;
+    align-content: flex-end;
+    align-items: baseline;
+    font-family: 'Capriola';
+}
+.btnstop{
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+}
+.btnstop:hover{
+    color: white;
+}
+.headerregi1{
+    margin-left: 80px;
+    width: 30px;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    top: -12px;
+}
+.boxingresar{
+    border-radius: 5px;
+}
+.headerregi1>ul{
+    background-color: rgb(114, 235, 130);
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    max-height: 0;
+    transition: max-height 0.01s ease-out;
+    overflow: hidden;
+    position: absolute;
+    width: 11rem;
+    top: 32.5px;
+    left: -60px;
+    font-family: 'Oswald';
+}
+.nrcontra{
+    text-decoration: underline;
+    color: black;
+}
+.headerregi1:hover>ul{
+    max-height: 16rem;
+    transition: max-height 0.80s ease-in;
+    padding: 5px;
+    box-shadow: -10px 10px 26px -7px rgba(0,0,0,0.74);
+}
+.btncuenta{
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Oswald';
+}
+.headerregi2{
+    position: relative;
+    top: -12px;
+}
+.btnregiA{
+    text-decoration: none;
+    color: black;
+}
+.btningresar{
+    width: 5.2rem;
+    padding: 2px;
+    background-color: green;
+    font-family: 'Oswald';
+    border: unset;
+    color: white;
+    font-weight: bold;
+}
+.anclaregistro{
+    text-decoration: none;
+    color: white;
+}
+/* -------------Section------------------ */
+.sectindex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 246, 246);
+}
+.carrouselofertas{
+    width: 1200px;
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    border: solid 2px rgb(212, 212, 212);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.imgofertas{
+    width: 1100px;
+    height: 340px;
+}
+.artprecios{
+    background-color: aqua;
+    height: 80%;
+    width: 1330px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.artprecios p{
+    max-width: 800px;
+    line-height: 5rem;
+    font-family: 'Capriola';
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+.artmp{
+    background-color: rgb(132, 191, 230);
+    width: 950px;
+    height: 26rem;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.artmp p{
+    margin-top: 18px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    max-width: 700px;
+    line-height: 3rem;
+    font-family: 'Capriola';
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+/* (------------SectionProximamente-------------) */
+.proximamente{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.secproximamente{
+    width: 800px;
+    height: 400px;
+    border: solid 2px whitesmoke;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Capriola';
+    font-size: 3rem;
+}
+/* (------------SectionArticulos-------------) */
+.ContPrincipal{
+    margin: 15px;
+    border-top: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+    padding: 7px;
+}
+.ContProductos{
+    width: auto;
+    margin: 5px;
+    padding: 15px 0px 0px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(194, 194, 194);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.Productos{
+    width: 250px;
+    height: 300px;
+    border: solid 2px lightgray;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px 15px 15px 0px ;
+    font-family: 'Capriola';
+}
+.Productos:hover{
+    animation-name: sombra;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+.imgprodu{
+    height: 180px;
+    margin-top: 5px;
+}
+.precioprodu{
+    color: rgb(140, 221, 18);
+    margin: 5px;
+}
+.nombreprodu{
+    font-size: 0.9rem;
+    margin: 5px 0px 5px;
+    height: 4rem;
+    line-height: 0.9rem;
+    max-width: 220px;
+}
+.btnproductos{
+    width: 50%;
+    padding: 3px;
+    background-color: green;
+    border: hidden;
+    font-family: 'Capriola';
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+.BanderaPc{
+    position: relative;
+    left: -85px;
+    top: -280px;
+}
+/* (------------SectionRegistro-------------) */
+.secregistro{
+    display: flex;
+    justify-content: center;
+}
+.secregistro2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 2px whitesmoke;
+    border-radius: 5px;
+    height: 500px;
+    width: 41rem;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Capriola';
+}
+.secregistro2> p{
+    margin: 20px 0px 10px 0px;
+    font-size: 1.2rem;
+}
+.inregistro{
+    height: 1.5rem;
+    font-family: 'Capriola';
+    width: 40rem;
+    padding: 5px;
+}
+.inboton{
+    font-family: 'Capriola';
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    width: 30rem;
+    border: hidden;
+    border-radius: 8px;
+    padding: 5px;
+    align-self: center;
+}
+/* ---------------Footer---------------------- */
+footer{
+    background-color: rgb(158, 152, 152);
+    margin: 0px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-top-style: solid;
+    border-top-width: thin;
+    box-shadow: inset 0px 10px 12px -6px rgba(0,0,0,0.55);
+
+}
+.footer p{
+    margin: 0px;
+    padding: 0px;
+
+}
+.footer a{
+    text-decoration: none;
+    color: lightblue;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 30px;
+    font-family: 'Oswald';
+}
+
+#sepfoo{
+    left: -50px;
+    height: 130px;
+}
+.footer2{
+    position: relative;
+    font-family: 'Oswald';
+    left: -70px;
+    line-height: 30px;
+}
+/* --------------Animaciones------------ */
+@keyframes sombra{
+    from{
+        box-shadow: 0px;
+    }
+    to{
+        box-shadow: 10px 10px 6px -8px rgba(0,0,0,0.75);
+    }
 }

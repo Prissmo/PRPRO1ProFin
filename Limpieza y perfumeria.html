@@ -4,56 +4,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limpieza y perfumeria</title>
+    <link rel="stylesheet" href="./Css/Estilos.css">
+    <script src="Js/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+    <link rel="shortcut icon" href="./Imagenes/LogoPrincipal.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <div>
         <header>
-            <img src="./Imagenes/Logo.png" alt="LogoPrincipal" height="50 rem" width="50 rem">
-            <h1>Los 5 duendes</h1>
-            <ul>
-                <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="#">ofertas</a></li>
-                <li><a href="#">TAKE AWAY</a></li>
-                <li><a href="https://www.google.com.ar/maps/place/Irlanda/@53.3623833,-10.4602261,7z/data=!3m1!4b1!4m5!3m4!1s0x4859bae45c4027fb:0xcf7c1234cedbf408!8m2!3d53.41291!4d-8.24389" target="_blank" >Donde ubicarnos</a></li>
-            </ul>
-            <nav>
-                <ul> Categorias
-                    <li><a href="./almacen.html">Almacen</a></li>
-                    <li><a href="./bebidas.html">Bebidas</a></li>
-                    <li><a href="./frescos.html">Frescos</a></li>
-                    <li><a href="./Limpieza y perfumeria.html">Limpieza y perfumeria</a></li>
-                </ul>
-                <input type="button" value="Ingresar">
-                <input type="button" value="Registrarse"> 
-                <div>
-                    <form action="">
-                        <label>Usuario</label> <br>
-                        <input type="text"> <br>
-                        <label>Contraseña</label> <br>
-                        <input type="text"> <br>
-                        <a href="#">No recuerdo mi contraseña</a>
-
-                    </form>
+            <div class="headertop">
+                <div class="headertoplogo">
+                    <h1 class="tituloprincipal" id="iniciotitulo">L</h1>
+                    <img class="logoprincipal" src="./Imagenes/LogoPrincipal.png" alt="LogoPrincipal" >
+                    <h1 class="tituloprincipal">s <span class="titulo5">5</span> duendes</h1>
                 </div>
-            </nav>
+                <div class="headercate">
+                    <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="bi bi-justify" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    <label class="spancate">CATEGORIAS</label>
+                    <ul class="ulcate"> 
+                        <li><a href="./almacen.html">ALMACEN <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                          </svg> </a></li>
+                        <li><a href="./bebidas.html">BEBIDAS <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                          </svg> </a></li>
+                        <li><a href="./frescos.html">FRESCOS <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                          </svg> </a></li>
+                        <li><a href="./Limpieza y perfumeria.html">LIMPIEZA Y PERFUMERIA <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                          </svg> </a></li>
+                    </ul>
+                </div>
+                <div class="headertopbtns">
+                    <a class="btnstop" href="./Index.html">
+                        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg> INICIO</a>
+                    <span class="separador"></span>
+                    <a class="btnstop" href="./proximamente.html">
+                        <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="bi bi-percent" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                        </svg> OFERTAS</a>
+                    <span class="separador"></span>
+                    <a class="btnstop" href="./proximamente.html">
+                        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                         </svg> TAKE AWAY</a>
+                    <span class="separador"></span>
+                    <a class="btnstop" href="https://www.google.com.ar/maps/place/Irlanda/@53.3623833,-10.4602261,7z/data=!3m1!4b1!4m5!3m4!1s0x4859bae45c4027fb:0xcf7c1234cedbf408!8m2!3d53.41291!4d-8.24389" 
+                    target="_blank" >
+                    <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg> DONDE UBICARNOS</a>
+                    <span class="separador"></span>
+                </div>
+                <div class="headerregi1">
+                    <button id="btningresar" class="btncuenta" >
+                        <svg width="1.3rem" height="1.3rem" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg> Cuenta
+                    </button>
+                    <ul class="boxingresar">
+                        <li>
+                                <label>Usuario</label> <br>
+                                <input type="text" id="usuario"> <br>
+                                <label>Contraseña</label> <br>
+                                <input type="text" id="contraseña"> <br>
+                                <button class="btningresar">Ingresar</button> 
+                                <button class="btningresar"><a class="anclaregistro" href="./Registro.html">Registrarse</a></button> <br>
+                                <a class="nrcontra" href="#">No recuerdo mi contraseña</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
-        <hr>
     </div>
-    <div>
+    <section>
+        <article class="ContPrincipal">
+            <ul class="ContProductos">
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Aerosol-Odex-Desinfectante-Original-360ml-1-469976.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Aerosol Odex Desinfectante Original 360Ml</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Cepillos-Dentales-Oral-B-Whitening-Therapy-Purification-Suave-2-Un-1-469679.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Cepillos Dentales Oral B 2U</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Desinfectante-Aerosol-Original-Lysoform-285ml-1-343627.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Aeorosol Desinfectante Lysoform Original 285Ml</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Desodorante-De-Ambiente-Poett-Multiambientes-Primavera-360-Ml-1-29508.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Desodorante De Ambiente Poett Multiambientes Primavera 360Ml</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Desodorante-Femenino-Aerosol-Dove-Original-89-Gr-1-36126.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Desodorante Aerosol Dove Original 150Ml</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Detergente-Magistral-Multiuso-Lim-n-500-Ml-1-475332.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Detergente Magistral Multiuso Limon 500Ml</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Esponja-Fibra-Salva-Unas-Scotch-Brite-1-463732.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Esponja Fibra Salva Uñas Scotch Brite 1U</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Espuma-De-Afeitar-Foamy-Piel-Sensible-Gillette-312-Gr-1-2731.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Espuma De Afeitar Foamy Piel Sensible Gillete 312Gr</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Gel-Capilar-Fijacion-Fuerte-Algabo-475gr-1-10396.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Gel Capilar Fijacion Fuerte Algabo 475Gr</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Gel-Post-Afeitado-Gillete-75-Gr.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Gel Post Afeitado Gillete 75Gr</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Insecticida-Aerosol-Mosquitos-Raid-360-Cc-1-6061.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Insecticida Aerosol Mosquitos Raid 360Cc</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Jabon-Liquido-Ala--P-Diluir-Be-X500ml-1-472297.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Jabon Liquido Ala Para Diluir 500Ml + Botella 3Lt </p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Lavandina-Ayudin-Triple-Accion-Pureza-Glaciar-2-L-1-29497.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Lavandina Ayudin Triple Accion Pureza Glaciar 2Lt</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Maquina-De-Afeitar-Desechable-Prestobarba-3-Sense-Care-Gillette-4u-1-11950.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Maquina De Afeitar Desechable Prestobarba 3 Sense Care Gillete 4U</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Protector-Diario--Calipso-20-U-1-22696.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Protector Diario Calipso 20U</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Toalla-Higienica-Calipso-Normal-Gel-Boss-16-Un-1-33658.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Toalla Higienica Calipso Normal 16U</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Shampoo-Aminobio-Plus-Aceite-Palta-Plusbelle-1lt-1-9353.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Shampoo Aminobio Plus Plusbelle 1Lt</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Shampoo--Kids-3en1-Ph-Balanceado--Suave-350ml-1-457272.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Shampoo Kids 3 En 1 Ph Balanceade Suave 350Ml</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Shampoo-Pro-V-Control-Ca-da-Pantene-300ml-1-155414.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Shampoo Pantene Pro V Control Caída 300Ml</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+                <li>
+                    <div class="Productos">
+                        <img src="./Imagenes/LimpiezaYPerfumeria/Acondicionador-Pro-V-Control-Ca-da-Pantene-300ml-1-155415.jpg" alt="" class="imgprodu">
+                        <p class="precioprodu">$99,99</p>
+                        <p class="nombreprodu">Acondicionador Pantene Pro V Control Caída 300Ml</p>
+                        <input type="button" value="Agregar" class="btnproductos">
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <div class="footer">
         <footer>
+            <div class="footer1">
             <p>Copyright 2020 © | Los 5 Duendes | Todos los derechos reservados</p> 
             <p>Dirección General de Defensa y Protección al Consumidor: <a href="https://www.buenosaires.gob.ar/defensaconsumidor" target="_blank" >Ingrese aquí</a></p>
             <a href="http://www.afip.gob.ar/sitio/externos/"> 
                 <!-- Ingresar el link hacia la pagina fiscal del dueño -->
                 <img src="./imagenes/DataFiscal.jpg" alt="ImgDataFiscal" height="80 rem"> 
             </a>
+            </div>
+            <span class="separador" id="sepfoo"></span>
+            <div class="footer2">
             <p>Contactenos:<br>
-                E-mail: Contacto@los5duendes.com<br>
-                Tel: 0-800-222-duende(383633)<br>
-                Whatsap: +5491113245768<br>
-                Facebook: <a href="#">Los5Duendes</a><br>
-                Instagram: <a href="#">Los5Duendesok</a><br>
+                <svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg> E-mail: Contacto@los5duendes.com<br>
+                <svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                </svg> Tel: 0-800-222-duende(383633)<br>
+                <i class="fab fa-whatsapp" width="1rem" height="1rem"></i> Whatsap: +5491113245768<br>
+                <i class="fab fa-facebook" width="1rem" height="1rem"></i> Facebook: <a href="#">Los5Duendes</a><br>
+                <i class="fab fa-instagram" width="1rem" height="1rem"></i> Instagram: <a href="#">Los5Duendesok</a><br>
             </p>
+            </div>
         </footer>
     </div>
 </body>
